@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shopp Café - Bem-Vindo!</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/swipper.css"> 
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d47311",
+              "primary-dark": "#b05d0e",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221910",
+              "text-light": "#181411",
+              "text-dark": "#f8f7f6",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2016",
+              "border-light": "#f4f2f0",
+              "border-dark": "#3f3225",
+              "subtle-light": "#897561",
+              "subtle-dark": "#a19182",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+            }
+          },
+        },
+      };
+    </script>
+    <style>.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; vertical-align: middle; }</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        
+        <div id="header-placeholder"></div>
+
+        <main class="flex-1">
+            <div class="w-full px-4 sm:px-8 py-5 flex flex-col items-center">
+                <div class="w-full max-w-[960px]">
+                    
+                    <div class="rounded-2xl overflow-hidden relative min-h-[480px] flex flex-col items-center justify-center text-center p-6 gap-6 bg-cover bg-center shadow-lg mb-8"
+                         style='background-image: linear-gradient(rgba(255, 166, 0, 0.500), rgba(0, 0, 0, 0.7)), url("https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzm9IRiU7jWNpB77t_p9vCvCZP0TpQkJWBVRLGT9-5ezo8Xl1iY5xV4ArVs4bhyou81TO3n1W249Vlni9yLMySU9oh7aFABwqMHzuuZis-61A7OVh9alfQkhXrH-r1JF5vj75icFgCOzwu9=s680-w680-h510-rw");'>
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-white text-4xl md:text-5xl font-black leading-tight drop-shadow-md">Bem-vindo à Shopp Café</h1>
+                            <h2 class="text-white/90 text-lg md:text-xl font-medium drop-shadow-sm">Onde cada xícara conta uma história</h2>
+                        </div>
+                        <a href="/cardapio.html" class="inline-flex items-center justify-center rounded-xl h-12 px-8 bg-primary text-white text-base font-bold shadow-lg hover:bg-primary-dark transition-transform hover:scale-105">Ver Cardápio</a>
+                    </div>
+
+                    <section class="collection">
+                        <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image1.jpg" alt="Café Especial">
+                                <div class="text-content">
+                                  <h3>Grãos Especiais</h3>
+                                  <p>Seleção premium das melhores fazendas, torrados com perfeição.</p>
+                                  <button class="btn">Saiba mais</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image2.jpg" alt="Ambiente">
+                                <div class="text-content">
+                                  <h3>Ambiente</h3>
+                                  <p>Um refúgio acolhedor no meio da cidade para seu relaxamento.</p>
+                                  <button class="btn">Visite-nos</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image3.jpg" alt="Localização">
+                                <div class="text-content">
+                                  <h3>Garden Coffee</h3>
+                                  <p>A energia da cidade combinada com o melhor sabor do espresso.</p>
+                                  <button class="btn">Localização</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image4.jpg" alt="Momentos">
+                                <div class="text-content">
+                                  <h3>Momentos</h3>
+                                  <p>Perfeito para encontros, trabalho remoto ou uma pausa merecida.</p>
+                                  <button class="btn">Cardápio</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image5.jpg" alt="Experiência">
+                                <div class="text-content">
+                                  <h3>Experiência</h3>
+                                  <p>Navegue por novos sabores e sensações em cada xícara.</p>
+                                  <button class="btn">Descubra</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="swiper-slide">
+                              <div class="card-content">
+                                <img src="/image/image6.jpg" alt="Estilo de Vida">
+                                <div class="text-content">
+                                  <h3>Lifestyle</h3>
+                                  <p>Mais que um café, um estilo de vida dinâmico e saboroso.</p>
+                                  <button class="btn">Siga-nos</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                    </section>
+                    
+                    <section class="mt-8 mb-10">
+                        <h2 class="text-2xl font-bold px-4 pb-6 border-b border-border-light mb-6 text-primary text-center">Experimente Nossos Especiais</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                            <div class="group cursor-pointer">
+                                <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl mb-3 shadow-md group-hover:shadow-xl transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3CWckCXg5octLv4y4SWq509zpdXJE7BHleYPM1ZAamGEW6y80bpdpQXLJkGSa0oQflggRi34LGJwUHLeXQ7J0uVB_a508vse3R9A0KUPT110dY0CPAlscPmg_ZqLb8rjejFJZqONV_zR160K77Za89Qnjq4YeLR8EwF97GnEoiWN7Q7lfImCWUPvpqpe50TPkTO935qkuiCuvxSf3DUhsNQZaSJR6PqAeJBxuxOiQLRvrTrdOCcLq6nOcZPjbvnBcpn_v_f96jwU");'></div>
+                                <p class="font-bold text-lg group-hover:text-primary transition-colors">Cappuccino Cremoso</p>
+                                <p class="text-sm text-subtle-light mt-1">Espresso, leite vaporizado e espuma generosa.</p>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl mb-3 shadow-md group-hover:shadow-xl transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-_oO1KQYgEOWW8xE7F1Ft-4zRSbzSLshdjO1qxWlCsOF241cLNB9Wn8AR71q2MmFjmx-oA-ynXYHRJkteqszsOoBYk93i8bT6ZVv10vKIhEXSQG7lbiPMmw1PzUshxnXghYXc2bSgrj8dGmaL5GoaZ3k4V7Bf6T2I14g9mWS--WA9KfiNqFXrAsNfma9WIWT3J9EIKIektbnlOC1FHhuT9UmPdabCx4MSRDkbRnPVc6NWzEaAC0qIZEs-7mch_85SPwngkbBYrcY");'></div>
+                                <p class="font-bold text-lg group-hover:text-primary transition-colors">Torta de Chocolate</p>
+                                <p class="text-sm text-subtle-light mt-1">Receita artesanal rica em cacau.</p>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <div class="w-full aspect-[4/3] bg-cover bg-center rounded-xl mb-3 shadow-md group-hover:shadow-xl transition-all duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRvjbPdC4aWNKGA2s_CSUF3o2cWtarilHtCtRwgeqoTjHo1zofcZ4_tpuoVSw74LjRaot2XjiuEyrMd90iVgjc7bWf0udkRP1y8nZg8xV6kWO2cndFgvcdAQiClvyxvfTMp_A08uYXg36M1JfVeAjRGu9F0iadCqq4rf1HE7V6xA9kwAeyDu83nsOTOODNfD9-INJm1_o78vWWhYR5f7bD_CsatjvKXebucBZfQ37oESY83XaXz_lmnDo2yFZnjgowyfwUmusCBzo");'></div>
+                                <p class="font-bold text-lg group-hover:text-primary transition-colors">Cold Brew</p>
+                                <p class="text-sm text-subtle-light mt-1">Extração a frio por 12 horas, suave e único.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+<script src="/js/components.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/swipper.js"></script>
+</body>
+</html>

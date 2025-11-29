@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nossa História - Shopp Café</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d47311",
+              "primary-dark": "#b05d0e",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221910",
+              "text-light": "#181411",
+              "text-dark": "#f8f7f6",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2016",
+              "border-light": "#f4f2f0",
+              "border-dark": "#3f3225",
+              "subtle-light": "#897561",
+              "subtle-dark": "#a19182",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+              fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+            }
+          },
+        },
+      };
+    </script>
+    <style>.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; vertical-align: middle; }</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+    <div class="relative flex min-h-screen w-full flex-col">
+        
+        <div id="header-placeholder"></div>
+
+        <main class="flex flex-1 justify-center py-5 sm:py-10">
+            <div class="flex flex-col w-full max-w-6xl px-4 sm:px-6">
+                
+                <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-2xl min-h-[400px] md:min-h-[500px] shadow-lg relative"
+                     style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzZLMJWc-xwnuO_Psxb1QtIcz92dQHaXN3P7jP-_HQiqION9-RxtwXRNMm8KARyRqDSxpwY2C0DqbxmEQOlRkUxyfbLyZsJopq2mkxxQ9nwgO6eOftU-6xbsPNbI14tICDoV5ntKi3jXUo=s680-w680-h510-rw");'>
+                    <div class="relative z-10 flex p-6 md:p-10">
+                        <h1 class="text-white text-4xl md:text-5xl font-black leading-tight">Nossa História</h1>
+                    </div>
+                </div>
+
+                <div class="py-12 text-center max-w-4xl mx-auto">
+                    <p class="text-lg md:text-xl font-normal leading-relaxed text-subtle-light">
+                        A história do Shopp Café é construída a partir da dedicação em estar presente nos momentos mais importantes dos nossos clientes. O que começou como o sonho de oferecer um café de qualidade, rapidamente se transformou na missão de cultivar um ambiente acolhedor.
+                    </p>
+                </div>
+
+                <section class="py-12 bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-sm border border-border-light card-animate">
+                    <h2 class="text-3xl font-bold pb-6 text-center text-primary">Nossa Missão</h2>
+                    <p class="text-lg md:text-xl font-normal leading-relaxed text-subtle-light max-w-3xl mx-auto text-center">
+                        No Shopp Café, nossa missão é criar o seu momento perfeito. Combinamos sabor inigualável com um atendimento atencioso, usando o digital e o presencial para garantir a melhor experiência.
+                    </p>
+                </section>
+
+                <section class="py-16">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1 space-y-4">
+                            <h2 class="text-3xl font-bold">Nossos Produtos</h2>
+                            <p class="text-base leading-loose text-subtle-light">Aqui, a natureza encontra o sabor! Entre o verde das plantas e o aroma do café, descubra um cardápio recheado de opções artesanais.</p>
+                            <p class="text-base leading-loose text-subtle-light">Cada detalhe foi pensado pra te proporcionar uma pausa leve e saborosa.</p>
+                        </div>
+                        <div class="order-1 md:order-2 card-animate">
+                            <img alt="Grãos de café" class="rounded-2xl w-full h-auto object-cover aspect-square shadow-md" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz033P1S73IBxM1FrANBna6cOOV5DFlmtnOIQE7KywmujB7eLbvJLmhQBbMTEw9bbEJcXKkiZyGF-PV-Kuq8G1Qk9oG2Fp0iFUTrhpKjuo1gFkTmBfRyqg2EVGqld06MVov7cta=s680-w680-h510-rw" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-12 text-center">
+                    <h2 class="text-3xl font-bold pb-10">Curiosidades</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center text-center p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light hover:shadow-md transition-shadow card-animate">
+                            <img alt="Localização" class="w-24 h-24 rounded-full object-cover mb-4" src="https://lh3.googleusercontent.com/p/AF1QipNWnTsGviicnCZSh0etLiLqTtptvlwLBSDnlkzB=s680-w680-h510-rw" />
+                            <h3 class="text-xl font-bold">Localização</h3>
+                            <p class="text-primary font-medium text-sm mt-1">Jardim Moda Shopping</p>
+                            <p class="text-sm leading-relaxed mt-3 text-subtle-light">Localização privilegiada para o seu passeio em família.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light hover:shadow-md transition-shadow card-animate">
+                            <img alt="Pet Friendly" class="w-24 h-24 rounded-full object-cover mb-4" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGjyOwdkK973tF61ABQhg7r3yrCV8UBISEEP_4AQaiSo8LiCmkdpeh8IQNpbqxVqh_2qV9qE_6B7pWwrV4SlvM-Ceo-UnbDZurv7y092kPpvcI0HdUmx_luoqEu0nM7FqBJXxJ=s680-w680-h510-rw" />
+                            <h3 class="text-xl font-bold">Pet-friendly</h3>
+                            <p class="text-primary font-medium text-sm mt-1">Espaço pet</p>
+                            <p class="text-sm leading-relaxed mt-3 text-subtle-light">Traga seu companheiro de quatro patas para curtir com a gente.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center p-6 bg-card-light dark:bg-card-dark rounded-xl shadow-sm border border-border-light hover:shadow-md transition-shadow card-animate">
+                            <img alt="Natureza" class="w-24 h-24 rounded-full object-cover mb-4" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxbugkKQXgXH7XnAaYF5UwRcfSZbJvhd43dwJQo_Hx_lP_QKX5EEtDS-cQuoBHNQ03-WFOKxN81LtYnlDdd7b1va9NfnOnr0w0pz-P-6-ZrmYSe59ocY6e3wNxhkIKuaX_QbIRHDg=s680-w680-h510-rw" />
+                            <h3 class="text-xl font-bold">Natureza</h3>
+                            <p class="text-primary font-medium text-sm mt-1">Refúgio Verde</p>
+                            <p class="text-sm leading-relaxed mt-3 text-subtle-light">Ambiente imersivo com plantas e aroma de café.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-12">
+                    <h2 class="text-3xl font-bold pb-8 text-center">Nossa Galeria</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                        <div class="col-span-2 row-span-2 rounded-xl overflow-hidden shadow-md group card-animate">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzzvfGtImtzjoHG2BU4EFfkQCp5Ew3zhBZo9iWW922gyb0RlB2RpecRQmNvusurTgjYX6BiBDHMcAs2aTVd7eZtmFtDAF6T7DnqzKT5lRJRCp6ZE9fQx6hxxfmlXD-ic1tdp7W_Yx4CZCn5=s680-w680-h510-rw" alt="Ambiente" />
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md group card-animate">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz_CapvPrH4xeckULApZIOO6q7HWOqajSKng0UGYpGdDqKb9L3X2t2lwjRoLnO3ZfsXLneD3Lm4EQIFERkUuPemwedKsnyKv2mgIVkTvHqWiUsXTcsAzx5tTZNn0VSQgbfWSGk=s680-w680-h510-rw" alt="Latte Art" />
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md group card-animate">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxM1sTblMpVpJDNSTQ_VsnYsmJWXx0ROUf4bOXhCdxp2FOLocBar1FHGDt5GmTjOpBsQOIIpUnijVIDp8622CjxQdKezc3m2jA_soW4EAkrs_xi_fHfJnaInSlMCoNd5CBhb-pH=s680-w680-h510-rw" alt="Amigos" />
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md group card-animate">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSymP_qCgPcJL04LUtT3Ou4jgtGyo_QHSf1pqGrNhcf2FftuxThnc6AHmaJey1nhsrfzeL7ussQEFtJeIgp4AGKqx9CkLPsPByIrUQVgVYr4iRRtxnRaHLsCNPLYmrJgylXYRs2OVObUraTF=s680-w680-h510-rw" alt="Bolo" />
+                        </div>
+                        <div class="rounded-xl overflow-hidden shadow-md group card-animate">
+                            <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwMDpdUx-wOnSPUbA5sjrBe8rIH56F6613I0__gM7zutAu5BDmw5PUousZEDuvCisGRnMa-S0N_JzRs9HNKgVFKUvH8IEOKIb0LmiMo_G1hUEgbA55j-RkTkTcIHVXklpuzQkA=s680-w680-h510-rw" alt="Atendimento" />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

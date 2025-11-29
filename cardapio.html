@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cardápio - Shopp Café</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d47311",
+              "primary-dark": "#b05d0e", // Adicionado para hover
+              "background-light": "#f8f7f6",
+              "background-dark": "#221910",
+              "text-light": "#181411",
+              "text-dark": "#f8f7f6",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2016",
+              "border-light": "#f4f2f0",
+              "border-dark": "#3f3225",
+              "subtle-light": "#897561",
+              "subtle-dark": "#a19182",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            // --- NOVA SEÇÃO DE ANIMAÇÕES ---
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+            // -------------------------------
+          },
+        },
+      };
+    </script>
+    <style>.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; vertical-align: middle; }</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+    <div class="relative flex min-h-screen w-full flex-col">
+        
+        <div id="header-placeholder"></div>
+
+        <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+                
+                <aside class="lg:col-span-1 lg:sticky lg:top-28 self-start bg-card-light dark:bg-card-dark p-4 rounded-xl shadow-sm border border-border-light">
+                    <div class="flex flex-col gap-4">
+                        <h1 class="text-lg font-bold leading-normal text-primary">Navegar no Menu</h1>
+                        <nav class="flex flex-col gap-1">
+                            <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors group" href="#expressos">
+                                <span class="material-symbols-outlined group-hover:text-primary text-subtle-light">coffee</span>
+                                <p class="text-sm font-medium">Cafés Expressos</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors group" href="#coados">
+                                <span class="material-symbols-outlined group-hover:text-primary text-subtle-light">local_cafe</span>
+                                <p class="text-sm font-medium">Cafés Coados</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors group" href="#chas">
+                                <span class="material-symbols-outlined group-hover:text-primary text-subtle-light">eco</span>
+                                <p class="text-sm font-medium">Chás e Outros</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors group" href="#lanches">
+                                <span class="material-symbols-outlined group-hover:text-primary text-subtle-light">bakery_dining</span>
+                                <p class="text-sm font-medium">Lanches</p>
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <div class="lg:col-span-3 space-y-12">
+                    <section class="scroll-mt-28" id="expressos">
+                        <h2 class="text-2xl font-bold pb-4 border-b border-border-light text-primary">Cafés Expressos</h2>
+                        <div class="grid grid-cols-1 divide-y divide-border-light">
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <div class="flex flex-col-reverse sm:flex-row justify-between gap-4">
+                                    <div class="flex flex-col gap-1 flex-[2] py-2">
+                                        <p class="text-base font-bold">Espresso</p>
+                                        <p class="text-sm text-subtle-light">Café forte e encorpado, a base de tudo. <span class="font-bold text-primary">R$ 7,00</span></p>
+                                    </div>
+                                    <div class="w-full sm:w-32 aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFi2_ckzzcj5eJfdx0uyLvL_PRma2G-zFYCPmQUZAno3PSygfMOOwnICC6JrHoOtCjeyt2DHS32LGAAScK_w0t6f_7TsKVGWi-yl39iCookgT3EJ3WcIuLJA3n3aDdAtEdbcVzswZs1xpTDYF0-4eIcMh3w96ZPqQbWE4X5fRNE9Ps9iRWWcEZN1UlfHIdqYzlYf_N0knNWOmMU8LgNLdXE4J3lhYewn_B9ip03HOdHoVToDSE4vB-Izre8t1fiLSboDZmVU54a5g");'></div>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-base font-medium">Cappuccino</p>
+                                    <p class="text-sm text-subtle-light">Espresso, leite vaporizado e espuma cremosa. <span class="font-bold text-primary">R$ 12,00</span></p>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-base font-medium">Latte</p>
+                                    <p class="text-sm text-subtle-light">Uma dose de espresso com leite vaporizado. <span class="font-bold text-primary">R$ 12,00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="scroll-mt-28" id="coados">
+                        <h2 class="text-2xl font-bold pb-4 border-b border-border-light text-primary">Cafés Coados</h2>
+                        <div class="grid grid-cols-1 divide-y divide-border-light">
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <p class="text-base font-medium">Hario V60</p>
+                                <p class="text-sm text-subtle-light">Método japonês, bebida limpa e doce. <span class="font-bold text-primary">R$ 15,00</span></p>
+                            </div>
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <p class="text-base font-medium">Prensa Francesa</p>
+                                <p class="text-sm text-subtle-light">Encorpado, extrai óleos essenciais. <span class="font-bold text-primary">R$ 14,00</span></p>
+                            </div>
+                        </div>
+                    </section>
+
+                     <section class="scroll-mt-28" id="chas">
+                        <h2 class="text-2xl font-bold pb-4 border-b border-border-light text-primary">Chás e Outros</h2>
+                        <div class="grid grid-cols-1 divide-y divide-border-light">
+                             <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <div class="flex flex-col-reverse sm:flex-row justify-between gap-4">
+                                    <div class="flex flex-col gap-1 flex-[2] py-2">
+                                        <p class="text-base font-bold">Matcha Latte</p>
+                                        <p class="text-sm text-subtle-light">Chá verde premium com leite. <span class="font-bold text-primary">R$ 15,00</span></p>
+                                    </div>
+                                    <div class="w-full sm:w-32 aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC71pzTJ4dQaYBOGaPkDxHq4L63ggE15NrKwZy2m30odBeLm6j9SZJYtR3UrTolrm9MA3zLeVK9WlBeo-SzDNCJ3T9PKbUYzs1Myt89JY5Auplkq16Q4U2DZnuMy7Ij-MiDATc4epVWl-U5qYM67gnym2qCststffjmJN9OzH0UWhFw4YMf8g0fF-EZBQcmx6icWZgpubwyMDAiV44YHhfUacSFlCehfBCDShCL0YrTivdQ5oFU4VYR2GP5-feLNCG7yQpIiEdSsWc");'></div>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <p class="text-base font-medium">Chocolate Quente</p>
+                                <p class="text-sm text-subtle-light">Cremoso e aveludado. <span class="font-bold text-primary">R$ 14,00</span></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="scroll-mt-28" id="lanches">
+                        <h2 class="text-2xl font-bold pb-4 border-b border-border-light text-primary">Lanches</h2>
+                        <div class="grid grid-cols-1 divide-y divide-border-light">
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <div class="flex flex-col-reverse sm:flex-row justify-between gap-4">
+                                    <div class="flex flex-col gap-1 flex-[2] py-2">
+                                        <p class="text-base font-bold">Croissant</p>
+                                        <p class="text-sm text-subtle-light">Clássico francês, amanteigado. <span class="font-bold text-primary">R$ 10,00</span></p>
+                                    </div>
+                                    <div class="w-full sm:w-32 aspect-video bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnLruzz1a36T6FhTRk5s0WYmYltlHyR2yMk2tr6DyTxtHxSy9YFxuNBHVU1OyB9ndON0vRvvPa1Kke_qwgOkAtl-8VQVdEluZ4NGajnoqWh7aqR4htKzoyNgfQxRGEmSzxhMa5gTnhDGDYiFiUE2SgV5OeCSKUIgooB7THI25S_o_Ccrib6BxppE7ctM3akhiuj0MRacEQ7qvGJAnpp1TrB5dPJsPkEQbbDAEw273wKV5cUkPca50Q5_7y5m9yjjs8bOuns6VoT6U");'></div>
+                                </div>
+                            </div>
+                            <div class="p-4 hover:bg-black/5 rounded-lg transition-colors">
+                                <p class="text-base font-medium">Pão de Queijo</p>
+                                <p class="text-sm text-subtle-light">Porção com 4 unidades. <span class="font-bold text-primary">R$ 8,00</span></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+        </div>
+<script src="/js/components.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

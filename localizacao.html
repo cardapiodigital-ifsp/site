@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Localização e Contato - Shopp Café</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#d47311",
+              "primary-dark": "#b05d0e", // Adicionado para hover
+              "background-light": "#f8f7f6",
+              "background-dark": "#221910",
+              "text-light": "#181411",
+              "text-dark": "#f8f7f6",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2016",
+              "border-light": "#f4f2f0",
+              "border-dark": "#3f3225",
+              "subtle-light": "#897561",
+              "subtle-dark": "#a19182",
+            },
+            fontFamily: {
+              display: ["Work Sans", "Noto Sans", "sans-serif"],
+            },
+            // --- NOVA SEÇÃO DE ANIMAÇÕES ---
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+            // -------------------------------
+          },
+        },
+      };
+    </script>
+    <style>.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; vertical-align: middle; }</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        
+        <div id="header-placeholder"></div>
+
+        <main class="flex flex-col flex-1 items-center px-4 py-10 md:px-10 md:py-16">
+            <div class="flex flex-col gap-10 md:gap-16 max-w-6xl w-full">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-3xl md:text-4xl font-black leading-tight">Contato & Localização</h1>
+                    <p class="text-lg text-subtle-light max-w-2xl">Adoraríamos ouvir você. Visite-nos ou envie uma mensagem.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col divide-y divide-border-light">
+                            <div class="flex items-start gap-4 py-4">
+                                <div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12"><span class="material-symbols-outlined">location_on</span></div>
+                                <div class="flex flex-col justify-center flex-1">
+                                    <p class="text-base font-bold">Nosso Endereço</p>
+                                    <p class="text-sm text-subtle-light mt-1">Rodovia Pompeu Conti, 3230<br>Bairro Salto - Jardim Moda Shopping</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 py-4">
+                                <div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12"><span class="material-symbols-outlined">call</span></div>
+                                <div class="flex flex-col justify-center flex-1">
+                                    <p class="text-base font-bold">Telefone / WhatsApp</p>
+                                    <p class="text-sm text-subtle-light mt-1">(19) 99778-1114</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4 py-4">
+                                <div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12"><span class="material-symbols-outlined">mail</span></div>
+                                <div class="flex flex-col justify-center flex-1">
+                                    <p class="text-base font-bold">Email</p>
+                                    <p class="text-sm text-subtle-light mt-1">contato@shoppcafe.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-80 lg:h-full min-h-[350px] rounded-2xl overflow-hidden shadow-lg border border-border-light relative bg-gray-100">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0505056608213!2d-46.53078322541932!3d-22.577214279488455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c93fdd99983be3%3A0x24f8a04fed62d5e1!2sShopp%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1764113100145!5m2!1spt-BR!2sbr" 
+                            class="w-full h-full absolute inset-0 border-0" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="w-full border-t border-border-light pt-10 mt-6">
+                    <div class="max-w-3xl mx-auto flex flex-col gap-8">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold">Envie uma Mensagem</h3>
+                            <p class="text-base text-subtle-light mt-2">Dúvidas? Preencha o formulário abaixo.</p>
+                        </div>
+                        <form class="grid grid-cols-1 md:grid-cols-2 gap-6" action="https://formsubmit.co/cardapiodigital.ifsp@gmail.com" method="POST">
+                            <div class="md:col-span-1 space-y-2">
+                                <label class="block text-sm font-semibold" for="name">Nome</label>
+                                <input class="w-full rounded-lg border border-border-dark/20 bg-card-light p-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none" id="name" name="name" placeholder="Seu nome" type="text" required />
+                            </div>
+                            <div class="md:col-span-1 space-y-2">
+                                <label class="block text-sm font-semibold" for="email">Email</label>
+                                <input class="w-full rounded-lg border border-border-dark/20 bg-card-light p-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none" id="email" name="email" placeholder="seu@email.com" type="email" required />
+                            </div>
+                            <div class="md:col-span-2 space-y-2">
+                                <label class="block text-sm font-semibold" for="message">Mensagem</label>
+                                <textarea class="w-full rounded-lg border border-border-dark/20 bg-card-light p-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary outline-none min-h-[120px]" id="message" name="message" placeholder="Sua mensagem..." required></textarea>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false" />
+                            <div class="md:col-span-2 flex justify-end">
+                                <button type="submit" class="rounded-xl h-12 px-8 bg-primary text-white font-bold shadow-md hover:bg-primary-dark transition-all">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+<script src="/js/components.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
